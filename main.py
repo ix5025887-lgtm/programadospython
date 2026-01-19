@@ -5,3 +5,5 @@ dcs=4
 screen.menu("")
 input('')
 screen.clear()
+
+print("dog")
