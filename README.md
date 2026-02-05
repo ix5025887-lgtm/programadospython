@@ -35,6 +35,16 @@ O seguinte projeto trata-se de uma sistema de gerenciamento de cantina escolar, 
 
 ## Instalação
 
+MySQL
+
+1. Abra o navegador e acesse: https://dev.mysql.com/downloads/mysql/
+2. Role a página até a lista de downloads disponíveis. Clique no botão "Download" ao lado do download desejado.
+   
+    - Windows 64 bits - Windows (x86, 64 bits), MSI
+    - Windows 32 bits - Windows (x86, 32 bits), MSI
+
+Se você não tiver certeza, considere que está usando um computador de 32 bits.
+
 MySQL connector/Python
 
 A API clássica pode ser instalada via pip:
@@ -45,11 +55,6 @@ pip install mysql-connector-python
 
 ## Contribuindo
 
-Se vocẽ se sentir interessado, pode nos ajudas com:
-
-- Relatório de erros
-- Tratamento de erros
-- Otimização do sistema
 
 ## Autores
 
