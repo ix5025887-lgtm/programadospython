@@ -26,6 +26,20 @@ class VendaService(BaseService):
             return False
 
         total = preco * quantidade
+        
+        # ===== CONFIRMAÇÃO DA VENDA =====
+
+        print("\nResumo da venda:")
+        print(f"Produto: {nome}")
+        print(f"Quantidade: {quantidade}")
+        print(f"Preço unitário: {preco:.2f}")
+        print(f"Valor total: {total:.2f}")
+
+        confirmar = input("Confirmar venda? (s/n): ").lower()
+
+        if confirmar != 's':
+            print("Venda cancelada.")
+            return False
 
         self.cursor.execute(
             """
