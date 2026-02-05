@@ -17,7 +17,7 @@ O seguinte projeto trata-se de uma sistema de gerenciamento de cantina escolar, 
 
 - Controle de entrada/saída
 - Relatórios
-- ORganização por categoria
+- Organização por categoria
 
 ### Controle de vendas
 
@@ -34,6 +34,22 @@ O seguinte projeto trata-se de uma sistema de gerenciamento de cantina escolar, 
 - pip
 
 ## Instalação
+
+MySQL connector/Python
+
+A API clássica pode ser instalada via pip:
+
+```
+pip install mysql-connector-python
+```
+
+## Contribuindo
+
+Se vocẽ se sentir interessado, pode nos ajudas com:
+
+- Relatório de erros
+- Tratamento de erros
+- Otimização do sistema
 
 ## Autores
 
