@@ -35,7 +35,7 @@ O seguinte projeto trata-se de uma sistema de gerenciamento de cantina escolar, 
 
 ## Autores
 
-[Icaro Rodrigues Pacheco] (https://github.com/ix5025887-lgtm).
-[Arthur Pereira da Silva] (https://github.com/ArthurAlder).
+- [Icaro Rodrigues Pacheco] (https://github.com/ix5025887-lgtm).
+- [Arthur Pereira da Silva] (https://github.com/ArthurAlder).
 
 ## Autor
