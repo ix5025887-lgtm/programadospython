@@ -33,4 +33,11 @@ O seguinte projeto trata-se de uma sistema de gerenciamento de cantina escolar, 
 - Mysql 8.0+
 - pip
 
+## Instalação
+
+## Autores
+
+- [Arthur Silva](https://github.com/ArthurAlder)
+- [Icaro Pacheco](https://github.com/ix5025887-lgtm)
+
 
