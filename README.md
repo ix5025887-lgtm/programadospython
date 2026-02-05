@@ -27,13 +27,21 @@ O seguinte projeto trata-se de uma sistema de gerenciamento de cantina escolar, 
 
 - Gerar relatórios
 
-##  Requisítos
+##  Tecnológias utilizadas
 
 - Python 3.10+
 - Mysql 8.0+
 - pip
 
 ## Instalação
+
+Django
+
+Python e Django precisam ser instalados:
+
+```
+pip install django
+```
 
 MySQL
 
@@ -53,8 +61,11 @@ A API clássica pode ser instalada via pip:
 pip install mysql-connector-python
 ```
 
+## Limitações
+
 ## Contribuindo
 
+Se você deseja contribuir com o esse projeto
 
 ## Autores
 
