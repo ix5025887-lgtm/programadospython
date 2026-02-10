@@ -53,11 +53,6 @@ A API clássica pode ser instalada via pip:
 pip install mysql-connector-python
 ```
 
-## Limitações
-
-## Contribuindo
-
-Se você deseja contribuir com o esse projeto
 
 ## Autores
 
