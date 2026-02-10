@@ -35,14 +35,6 @@ O seguinte projeto trata-se de uma sistema de gerenciamento de cantina escolar, 
 
 ## Instalação
 
-Django
-
-Python e Django precisam ser instalados:
-
-```
-pip install django
-```
-
 MySQL
 
 1. Abra o navegador e acesse: https://dev.mysql.com/downloads/mysql/
