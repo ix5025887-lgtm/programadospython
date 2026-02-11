@@ -7,9 +7,11 @@ from .services.factory import ServiceFactory
 from django.http import HttpResponse
 from rest_framework.exceptions import ValidationError
 from core.models import Estoque
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("Sistema de Mercado API rodando 🚀")
+    return render(request, 'base.html')
+
 
 
 class ProdutoViewSet(viewsets.ModelViewSet):

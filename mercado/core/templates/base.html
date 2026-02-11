@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Mercado</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Mercado</h1>
+    </header>
+
+    <nav>
+        <a href="/admin/">Admin</a>
+        <a href="/api/produtos/">Produtos</a>
+        <a href="/api/estoques/">Estoque</a>
+        <a href="/api/vendas/">Vendas</a>
+    </nav>
+
+    <section>
+        <h2>Bem-vindo ao sistema</h2>
+        <p>Projeto Django com API e interface básica.</p>
+    </section>
+
+</body>
+</html>
