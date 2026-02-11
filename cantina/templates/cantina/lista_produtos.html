@@ -1,0 +1,16 @@
+{% extends "cantina/base.html" %}
+{% block title %}Produtos{% endblock %}
+{% block content %}
+<h1>Produtos</h1>
+<p><a href="/produtos/novo/" class="btn btn-success">Novo Produto</a></p>
+{% if produtos %}
+<table>
+    <tr><th>Código</th><th>Nome</th><th>Preço</th></tr>
+    {% for p in produtos %}
+    <tr><td>{{ p.codigo }}</td><td>{{ p.nome }}</td><td>R$ {{ p.preco|floatformat:2 }}</td></tr>
+    {% endfor %}
+</table>
+{% else %}
+<div class="empty">Nenhum produto</div>
+{% endif %}
+{% endblock %}

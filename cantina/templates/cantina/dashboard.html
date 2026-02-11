@@ -1,0 +1,28 @@
+{% extends "cantina/base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<h1>Inicio</h1>
+
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem; margin:2rem 0;">
+    <div style="background:white; padding:2rem; border-radius:4px; text-align:center;">
+        <h3 style="font-size:2rem; color:#3498db;">{{ total_produtos }}</h3>
+        <p>Produtos</p>
+    </div>
+    <div style="background:white; padding:2rem; border-radius:4px; text-align:center;">
+        <h3 style="font-size:2rem; color:#27ae60;">{{ total_estoque }}</h3>
+        <p>Em Estoque</p>
+    </div>
+    <div style="background:white; padding:2rem; border-radius:4px; text-align:center;">
+        <h3 style="font-size:2rem; color:#e74c3c;">R$ {{ total_vendas|floatformat:2 }}</h3>
+        <p>Vendido</p>
+    </div>
+</div>
+
+<p>
+    <a href="/produtos/novo/" class="btn btn-success">Novo Produto</a>
+    <a href="/estoque/entrada/" class="btn">Entrada Estoque</a>
+    <a href="/vendas/registrar/" class="btn">Registrar Venda</a>
+</p>
+{% endblock %}
