@@ -1,0 +1,22 @@
+{% extends "cantina/base.html" %}
+{% block title %}Estoque{% endblock %}
+{% block content %}
+<h1>Estoque</h1>
+<p><a href="/estoque/entrada/" class="btn btn-success">Entrada</a></p>
+{% if estoques %}
+<table>
+    <tr><th>Produto</th><th>Qtd</th><th>Preço Unit.</th><th>Total</th><th>Última Atualização</th></tr>
+    {% for e in estoques %}
+    <tr>
+        <td>{{ e.produto.nome }}</td>
+        <td>{{ e.quantidade }}</td>
+        <td>R$ {{ e.produto.preco|floatformat:2 }}</td>
+        <td>R$ {{ total|floatformat:2 }}</td>
+        <td>{{ e.data_atualizacao|date:"d/m/Y H:i" }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<div class="empty">Vazio</div>
+{% endif %}
+{% endblock %}
