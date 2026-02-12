@@ -32,12 +32,12 @@ class Venda(models.Model):
     valor_total = models.DecimalField(
         max_digits=10,
         decimal_places=2,
-        editable=False  # 🔒 não aparece como input
+        editable=False  
     )
     data = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
-        # cálculo automático
+        
         self.valor_total = self.produto.preco * self.quantidade
         super().save(*args, **kwargs)
 
