@@ -1,0 +1,35 @@
+script para criação do banco de dados
+
+
+CREATE DATABASE `db1` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+
+adicione essas tabelas em ordem por causa das Foreing keys
+
+  CREATE TABLE `produtos` (
+  `Código` int NOT NULL,
+  `Produto` varchar(50) DEFAULT NULL,
+  `Preço` double DEFAULT NULL,
+  PRIMARY KEY (`Código`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `estoque` (
+  `Código` int DEFAULT NULL,
+  `Produto` varchar(50) DEFAULT NULL,
+  `Preço` double DEFAULT NULL,
+  `Quantidade_Estoque` int DEFAULT NULL,
+  KEY `Código` (`Código`),
+  CONSTRAINT `estoque_ibfk_1` FOREIGN KEY (`Código`) REFERENCES `produtos` (`Código`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `vendas` (
+  `Código` int DEFAULT NULL,
+  `Produto` varchar(50) DEFAULT NULL,
+  `Preço` double DEFAULT NULL,
+  `Quantidade_Vendas` int DEFAULT NULL,
+  `Valor_Total_Vendido` double DEFAULT NULL,
+  KEY `Código` (`Código`),
+  CONSTRAINT `vendas_ibfk_1` FOREIGN KEY (`Código`) REFERENCES `produtos` (`Código`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
