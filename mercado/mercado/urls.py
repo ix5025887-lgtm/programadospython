@@ -19,7 +19,7 @@ from django.urls import path, include
 from core.views import home
 
 urlpatterns = [
-    path('', home),  # ← ISSO AQUI resolve
+    path('', home),  
     path('admin/', admin.site.urls),
     path('api/', include('core.urls')),
 ]
